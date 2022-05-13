@@ -532,7 +532,9 @@ uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 
 [[deps.ProceduralNoise]]
 deps = ["CircularArrays", "Interpolations", "LinearAlgebra", "StaticArrays"]
-path = "/home/belmant/.julia/dev/ProceduralNoise"
+git-tree-sha1 = "fa484b3c9d8c524b9a41119b7d7e3fad1d7a19bb"
+repo-rev = "master"
+repo-url = "https://github.com/serenity4/ProceduralNoise.jl"
 uuid = "3e47a1cc-29f2-4c46-afe0-95fe1d251308"
 version = "0.1.0"
 
