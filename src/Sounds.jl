@@ -1,4 +1,4 @@
-module VoiceAdaptation
+module Sounds
 
 using Reexport
 using PortAudio: PortAudioStream

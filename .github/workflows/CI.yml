@@ -53,6 +53,6 @@ jobs:
       - run: |
           julia --project=docs -e '
             using Documenter: DocMeta, doctest
-            using VoiceAdaptation
-            DocMeta.setdocmeta!(VoiceAdaptation, :DocTestSetup, :(using VoiceAdaptation); recursive=true)
-            doctest(VoiceAdaptation)'
+            using Sounds
+            DocMeta.setdocmeta!(Sounds, :DocTestSetup, :(using Sounds); recursive=true)
+            doctest(Sounds)'

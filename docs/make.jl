@@ -1,16 +1,16 @@
-using VoiceAdaptation
+using Sounds
 using Documenter
 
-DocMeta.setdocmeta!(VoiceAdaptation, :DocTestSetup, :(using VoiceAdaptation); recursive=true)
+DocMeta.setdocmeta!(Sounds, :DocTestSetup, :(using Sounds); recursive=true)
 
 makedocs(;
-    modules=[VoiceAdaptation],
+    modules=[Sounds],
     authors="Cédric BELMANT",
-    repo="https://github.com/serenity4/VoiceAdaptation.jl/blob/{commit}{path}#{line}",
-    sitename="VoiceAdaptation.jl",
+    repo="https://github.com/serenity4/Sounds.jl/blob/{commit}{path}#{line}",
+    sitename="Sounds.jl",
     format=Documenter.HTML(;
         prettyurls=get(ENV, "CI", "false") == "true",
-        canonical="https://serenity4.github.io/VoiceAdaptation.jl",
+        canonical="https://serenity4.github.io/Sounds.jl",
         assets=String[],
     ),
     pages=[
@@ -19,6 +19,6 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/serenity4/VoiceAdaptation.jl",
+    repo="github.com/serenity4/Sounds.jl",
     devbranch="main",
 )

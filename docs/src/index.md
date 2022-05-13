@@ -1,14 +1,14 @@
 ```@meta
-CurrentModule = VoiceAdaptation
+CurrentModule = Sounds
 ```
 
-# VoiceAdaptation
+# Sounds
 
-Documentation for [VoiceAdaptation](https://github.com/serenity4/VoiceAdaptation.jl).
+Documentation for [Sounds](https://github.com/serenity4/Sounds.jl).
 
 ```@index
 ```
 
 ```@autodocs
-Modules = [VoiceAdaptation]
+Modules = [Sounds]
 ```

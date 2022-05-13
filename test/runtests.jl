@@ -1,7 +1,7 @@
-using VoiceAdaptation
+using Sounds
 using Test
 
-@testset "VoiceAdaptation.jl" begin
+@testset "Sounds.jl" begin
     A = MusicalNote(440)
     @test sample(A, 2) isa Vector
     @test A + 1 - 1 == A

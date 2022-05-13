@@ -1,4 +1,4 @@
-using VoiceAdaptation
+using Sounds
 
 function ema(ys, n)
   res = similar(ys)
