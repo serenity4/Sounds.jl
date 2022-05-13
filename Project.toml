@@ -3,6 +3,11 @@ uuid = "47c76daa-90d8-4891-8d99-b829cf5b41c6"
 authors = ["Cédric BELMANT"]
 version = "0.1.0"
 
+[deps]
+PortAudio = "80ea8bcb-4634-5cb3-8ee8-a132660d1d2d"
+ProceduralNoise = "3e47a1cc-29f2-4c46-afe0-95fe1d251308"
+Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
+
 [compat]
 julia = "1.7"
 
