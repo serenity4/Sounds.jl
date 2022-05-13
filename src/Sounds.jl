@@ -9,6 +9,6 @@ include("procedural.jl")
 include("notes.jl")
 include("postprocessing.jl")
 
-export sample, play, MusicalNote, frequency, set_sample_rate, Mix, SineWave, EMA
+export sample, play, MusicalNote, frequency, set_sample_rate, Mix, SineWave, EMA, FrequencySignal, evaluate, time_coordinates, reconstruct
 
 end

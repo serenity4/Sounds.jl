@@ -11,5 +11,5 @@ using Test
     @test m(2.32) < 0.7
 
     ema = EMA(SineWave(A), 10)
-    @test Sounds.evaluate(ema, 2, 44000) isa Vector
+    @test evaluate(ema, 2, 44000) isa Vector
 end

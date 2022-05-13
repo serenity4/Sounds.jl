@@ -11,6 +11,21 @@ SineWave(x; phase = 0, amplitude = 1) = SineWave(frequency(x), phase, amplitude)
 struct Mix{S}
   sources::S
   weights::Vector{Float64}
+  sum::Float64
 end
 
-(mix::Mix)(t) = sum(s(t) * w for (s, w) in zip(mix.sources, mix.weights)) / sum(mix.weights)
+Mix(sources, weights) = Mix(sources, weights, sum(weights))
+(mix::Mix)(t) = sum(s(t) * w for (s, w) in zip(mix.sources, mix.weights)) / mix.sum
+
+struct FrequencySignal
+  frequencies
+  amplitude
+  phase
+end
+
+function reconstruct(freq::FrequencySignal)
+  (; frequencies, amplitude, phase) = freq
+  weights = amplitude.(frequencies)
+  waves = SineWave.(frequencies, phase.(frequencies), 1.)
+  Mix(waves, weights)
+end
